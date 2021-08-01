@@ -26,10 +26,12 @@ module.exports = {
           {
             loader: 'css-loader',
             options: {
-              modules: true,
-              localsConvention: 'camelCase',
-            }
-          }
+              modules: {
+                namedExport: true,
+                exportLocalsConvention: "camelCaseOnly",
+              },
+            },
+          },
         ]
       }
     ],
